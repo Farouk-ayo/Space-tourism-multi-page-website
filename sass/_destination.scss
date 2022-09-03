@@ -1,0 +1,81 @@
+.header__destination {
+  background: url("../images/destination/background-destination-desktop.jpg");
+  padding: 0rem 0rem 0rem 3rem;
+  background-size: cover;
+  background-position: right;
+}
+
+.right--toggle__destination {
+  padding: 0;
+  background: none;
+}
+
+.main--body__destination {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem 10rem 0rem 13rem;
+}
+
+.left--section__destination {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  .text {
+    color: #ffffff;
+  }
+}
+
+.planet {
+  color: #979797;
+  font-weight: 228;
+}
+
+.right--section__destination {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 35%;
+  margin-right: 5rem;
+  align-self: center;
+  .text--highlight__destination {
+    font-size: 10rem;
+  }
+  ul {
+    li {
+      a {
+        color: #d0d6f9;
+      }
+    }
+  }
+  hr {
+    border-style: none;
+    border: none;
+    border-bottom: 0.1rem solid #ffffff80;
+    font-weight: 10;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 5rem;
+  h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 18;
+  }
+  h1 {
+    font-size: 3rem;
+    font-family: "Bellefair", serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 150;
+  }
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #d0d6f9;
+}

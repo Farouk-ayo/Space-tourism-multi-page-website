@@ -1,0 +1,68 @@
+.header--crew {
+  background: url(../images/crew/background-crew-desktop.jpg);
+  padding: 0rem 0rem 0rem 3rem;
+  background-size: cover;
+  background-position: right;
+}
+.main--body__crew {
+  margin: 10rem 10rem 0 13rem;
+  padding-bottom: 0rem;
+}
+
+.text--highlight__small {
+  font-size: 3.2rem;
+  font-family: "Bellefair", serif;
+  color: #979797;
+  text-transform: uppercase;
+}
+
+.left--section__crew {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  margin-bottom: 5rem;
+  .text {
+    color: #ffffff;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .text--content__crew {
+      width: 90%;
+    }
+  }
+  .text--highlight__small {
+    font-weight: 18;
+  }
+  .text--highlight {
+    font-size: 5.6rem;
+  }
+}
+.right--section__crew {
+  top: 0rem;
+}
+
+.crew--img {
+  position: relative;
+  top: 0rem;
+}
+
+.dots {
+  position: relative;
+  bottom: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+.dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #979797;
+}
+
+.active {
+  background-color: #ffffff;
+}

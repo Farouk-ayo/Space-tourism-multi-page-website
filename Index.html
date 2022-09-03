@@ -10,6 +10,10 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
     <script src="index.js"></script>
@@ -22,10 +26,22 @@
         </div>
         <hr />
         <ul class="toggle--items">
-          <li class="toggle--items__each">00 Home</li>
-          <li class="toggle--items__each">01 Destination</li>
-          <li class="toggle--items__each">02 Crew</li>
-          <li class="toggle--items__each">03 Technology</li>
+          <li class="toggle--items__each">
+            <a href="#"><span class="number">00</span> Home</a>
+          </li>
+          <li class="toggle--items__each">
+            <a href="sites/destination-moon.html"
+              ><span class="number">01</span> destination</a
+            >
+          </li>
+          <li class="toggle--items__each">
+            <a href="sites/crew-commander.html"
+              ><span class="number">02</span> crew</a
+            >
+          </li>
+          <li class="toggle--items__each">
+            <a href="sites/technology-vehicle.html"><span class="number">03</span> technology</a>
+          </li>
         </ul>
       </nav>
       <main class="main--body">
@@ -36,11 +52,11 @@
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
-            world experience! Explore
+            world experience!
           </p>
         </section>
         <section class="right--section">
-          <div class="circle--img">Explore</div>
+          <button class="circle--img">Explore</button>
         </section>
       </main>
     </header>
