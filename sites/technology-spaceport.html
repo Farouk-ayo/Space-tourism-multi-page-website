@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
-    <script src="index.js"></script>
+    <script defer src="../index.js"></script>
   </head>
   <body>
     <header class="header header__tech">
@@ -25,32 +25,61 @@
           <img src="../logo/logo.svg" alt="" />
         </div>
         <hr />
-        <ul class="toggle--items">
+        <ul class="toggle--items none">
           <li class="toggle--items__each">
-            <a href="#"><span class="number">00</span> Home</a>
+            <a class="ahref" href="../Index.html"
+              ><span class="number">00</span> Home</a
+            >
           </li>
           <li class="toggle--items__each">
-            <a href="destination-moon.html"
+            <a class="ahref" href="destination-moon.html"
               ><span class="number">01</span> destination</a
             >
           </li>
           <li class="toggle--items__each">
-            <a href="crew-commander.html"
+            <a class="ahref" href="crew-commander.html"
               ><span class="number">02</span> crew</a
             >
           </li>
           <li class="toggle--items__each">
-            <a href="technology-vehicle.html"
+            <a class="ahref" href="technology-vehicle.html"
               ><span class="number">03</span> technology</a
             >
           </li>
         </ul>
+        <input type="checkbox" class="navbar" id="navbar--toggle" />
+        <label for="navbar--toggle" class="navbar__button">
+          <span class="navbar__icon">&nbsp;</span>
+        </label>
+
+        <div class="navbar--tog">
+          <ul class="toggle--items--check">
+            <li class="toggle--items__each">
+              <a href="../Index.html"><span class="number">00</span> Home</a>
+            </li>
+            <li class="toggle--items__each">
+              <a href="destination-moon.html"
+                ><span class="number">01</span> destination</a
+              >
+            </li>
+            <li class="toggle--items__each">
+              <a href="crew-commander.html"
+                ><span class="number">02</span> crew</a
+              >
+            </li>
+            <li class="toggle--items__each">
+              <a href="technology-vehicle.html"
+                ><span class="number">03</span> technology</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
       <main class="main--body main--body__destination main--body__tech">
         <section
           class="left--section left--section__destination left--section__tech"
         >
-          <h5 class="text">
+          <h5 class="text none--tech">
             <span class="number planet">03</span> Space launch 101
           </h5>
           <div class="tech--text">
@@ -75,8 +104,27 @@
           </div>
         </section>
         <section class="right--section right--section__tech">
-          <img src="../images/technology/image-spaceport-portrait.jpg" alt="" />
+          <picture class="img-con">
+            <source
+              class="tech--img"
+              media="(min-width:68.75em)"
+              srcset="image-spaceport-portrait.jpg"
+            />
+            <source
+              class="tech--img"
+              media="(max-width:68.75em)"
+              srcset="image-spaceport-landscape.jpg"
+            />
+            <img
+              class="tech--img"
+              src="image-spaceport-portrait.jpg"
+              alt="tech"
+            />
+          </picture>
         </section>
+        <h5 class="text display--tech">
+          <span class="number planet">03</span> Space launch 101
+        </h5>
       </main>
     </header>
   </body>

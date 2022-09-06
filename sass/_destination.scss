@@ -1,12 +1,13 @@
 .header__destination {
   background: url("../images/destination/background-destination-desktop.jpg");
-  padding: 0rem 0rem 0rem 3rem;
+  padding: 3rem 0rem 0rem 3rem;
   background-size: cover;
   background-position: right;
   @include respond(tab) {
     background: url("../images/destination/background-destination-tablet.jpg");
     background-size: cover;
     background-position: center;
+    padding: 0rem 0rem 0rem 3rem;
   }
   @include respond(phone) {
     background: url("../images/destination/background-destination-mobile.jpg");
@@ -104,6 +105,9 @@
     z-index: 1;
     border-bottom: 0.1rem solid #ffffff80;
   }
+}
+.toggle--items__each--destination {
+  padding: 9rem 0rem 1rem 0rem;
 }
 
 .info {

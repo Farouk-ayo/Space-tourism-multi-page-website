@@ -18,7 +18,18 @@
     display: flex;
   }
 }
+.active--nav {
+  border-bottom: 0.3rem solid #ffffff;
+  bottom: 0rem;
 
+  // width: 9rem;
+}
+.hover--nav {
+  border-bottom: 0.3rem solid #ffffff78;
+  bottom: 0rem;
+
+  // width: 9rem;
+}
 .navbar {
   display: none;
   &:checked ~ .navbar--tog {

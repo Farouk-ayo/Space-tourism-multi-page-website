@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
-    <script src="index.js"></script>
+    <script defer src="../index.js"></script>
   </head>
   <body>
     <header class="header header__destination">
@@ -27,18 +27,24 @@
         <hr class="hr--nav" />
         <ul class="toggle--items none">
           <li class="toggle--items__each">
-            <a href="../Index.html"><span class="number">00</span> Home</a>
+            <a class="ahref" href="../Index.html"
+              ><span class="number">00</span> Home</a
+            >
           </li>
           <li class="toggle--items__each">
-            <a href="sites/destination-moon.html"
+            <a class="ahref" href="destination-moon.html"
               ><span class="number">01</span> destination</a
             >
           </li>
           <li class="toggle--items__each">
-            <a href=""><span class="number">02</span> crew</a>
+            <a class="ahref" href="crew-commander.html"
+              ><span class="number">02</span> crew</a
+            >
           </li>
           <li class="toggle--items__each">
-            <a href=""><span class="number">03</span> technology</a>
+            <a class="ahref" href="technology-vehicle.html"
+              ><span class="number">03</span> technology</a
+            >
           </li>
         </ul>
         <input type="checkbox" class="navbar" id="navbar--toggle" />
@@ -52,15 +58,17 @@
               <a href="../Index.html"><span class="number">00</span> Home</a>
             </li>
             <li class="toggle--items__each">
-              <a href="#"><span class="number">01</span> destination</a>
+              <a href="destination-moon.html"
+                ><span class="number">01</span> destination</a
+              >
             </li>
             <li class="toggle--items__each">
-              <a href="sites/crew-commander.html"
+              <a href="crew-commander.html"
                 ><span class="number">02</span> crew</a
               >
             </li>
             <li class="toggle--items__each">
-              <a href="sites/technology-vehicle.html"
+              <a href="technology-vehicle.html"
                 ><span class="number">03</span> technology</a
               >
             </li>
@@ -77,17 +85,17 @@
         </section>
         <section class="right--section right--section__destination">
           <ul class="toggle--items right--toggle__destination">
-            <li class="toggle--items__each">
-              <a href="destination-moon.html">Moon</a>
+            <li class="toggle--items__each toggle--items__each--destination">
+              <a class="ahref" href="destination-moon.html">Moon</a>
             </li>
-            <li class="toggle--items__each">
-              <a href="#">Mars</a>
+            <li class="toggle--items__each toggle--items__each--destination">
+              <a class="ahref" href="#">Mars</a>
             </li>
-            <li class="toggle--items__each">
-              <a href="destination-europa.html">Europa</a>
+            <li class="toggle--items__each toggle--items__each--destination">
+              <a class="ahref" href="destination-europa.html">Europa</a>
             </li>
-            <li class="toggle--items__each">
-              <a href="destination-titan.html">Titan</a>
+            <li class="toggle--items__each toggle--items__each--destination">
+              <a class="ahref" href="destination-titan.html">Titan</a>
             </li>
           </ul>
           <h1 class="text--highlight text--highlight__destination">Mars</h1>

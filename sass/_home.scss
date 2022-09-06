@@ -27,6 +27,7 @@ body {
     background: url("../images/home/background-home-tablet.jpg");
     background-size: cover;
     background-position: center;
+    padding: 0rem 0rem 0rem 3rem;
   }
   @include respond(phone) {
     background: url("../images/home/background-home-mobile.jpg");
@@ -73,36 +74,46 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    gap: 5rem;
-    top: 10rem;
-    padding: 4.5rem 0rem 4.5rem 5rem;
+
+    width: 100%;
+    padding: 10rem 0rem 4.5rem 7rem;
     z-index: 10;
   }
 }
+
 .toggle--items {
   list-style: none;
   display: flex;
   flex-direction: row;
-  background-color: transparent;
+  z-index: 10;
   //   justify-content: space-between;
   gap: 5rem;
-  backdrop-filter: blur(30px);
-  padding: 4.5rem 15rem 4.5rem 10rem;
+  // background-color: transparent;
+  // backdrop-filter: blur(30px);
+  background-color: #ffffff10;
+  backdrop-filter: none;
+  padding: 0 15rem 0 10rem;
 
   @include respond(win-port) {
-    padding: 4.5rem 5rem 4.5rem 10rem;
+    padding: 0 5rem 0 10rem;
   }
   @include respond(tab) {
     gap: 3rem;
   }
   @include respond(tab) {
+    padding: 0 5rem 0 5rem;
+  }
+}
+.toggle--items--home {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  @include respond(tab) {
     background-color: #ffffff10;
     backdrop-filter: none;
-    padding: 4.5rem 5rem 4.5rem 5rem;
   }
 }
 .toggle--items__each {
+  padding: 4.5rem 0 4.5rem 0rem;
   a {
     font-size: 1.7rem;
     display: flex;
@@ -147,7 +158,7 @@ body {
   }
   @include respond(tab) {
     flex-direction: column;
-    margin: 10rem 10rem 0rem 13rem;
+    margin: 10rem 0rem 0rem 0rem;
     align-items: center;
     justify-content: space-between;
     gap: 15rem;
@@ -163,12 +174,11 @@ body {
     width: 70%;
   }
   @include respond(tab) {
-    width: 61%;
     align-items: center;
   }
 
   @include respond(phone) {
-    width: 100%;
+    width: 80%;
   }
 }
 .text {
@@ -227,4 +237,9 @@ body {
   text-transform: uppercase;
   font-size: 3.2rem;
   font-family: "Bellefair", serif;
+  outline: none;
+  &:hover {
+    outline: 4rem solid rgb(48, 48, 48);
+    transition: all 0.3s;
+  }
 }

@@ -1,6 +1,6 @@
 .header__tech {
   background: url(../images/technology/background-technology-desktop.jpg);
-  padding: 0rem 0rem 0rem 3rem;
+  padding: 3rem 0rem 0rem 3rem;
   background-size: cover;
   background-position: right;
   @include respond(tab-land) {
@@ -11,9 +11,18 @@
   }
   @include respond(phone) {
     background-color: url(../images/technology/background-technology-mobile.jpg);
-    padding: 0rem 0rem 0rem 2rem;
+    padding: 0rem 0rem 0rem 0rem;
     background-size: cover;
     background-position: center;
+  }
+
+  nav {
+    @include respond(tab-land) {
+      padding-left: 3rem;
+    }
+    @include respond(phone) {
+      padding-top: 3rem;
+    }
   }
 }
 
@@ -21,6 +30,7 @@
   margin: 10rem 0rem 0rem 13rem;
   display: flex;
   align-items: flex-start;
+
   @include respond(win-large) {
     margin: 10rem 0rem 0 5rem;
   }
@@ -31,12 +41,23 @@
     margin: 10rem 0rem 0 0rem;
     display: flex;
     flex-direction: column-reverse;
+    gap: 6rem;
+  }
+
+  h5 {
+    @include respond(tab-land) {
+      padding-left: 3rem;
+    }
   }
 }
 .left--section__tech {
   width: 50%;
   @include respond(win-large) {
     width: 60%;
+  }
+
+  @include respond(tab-land) {
+    width: 100%;
   }
 }
 
@@ -58,6 +79,10 @@
   // justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tech {
   display: flex;
@@ -67,11 +92,18 @@
   @include respond(win-land) {
     width: 90%;
   }
+  @include respond(tab-land) {
+    width: 70%;
+    align-items: center;
+  }
 }
 
 .text--content__tech {
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
 }
 
 .text--highlight__tech {
@@ -80,22 +112,30 @@
     font-size: 4.5rem;
   }
 }
+.text--content {
+  @include respond(tab-land) {
+    text-align: center;
+  }
+}
 
 .numbers {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.img-con {
+  width: 100%;
 }
 .tech--img {
   position: relative;
   top: 0rem;
   @include respond(tab-land) {
     width: 100%;
-    object-fit: fill;
-    height: 50rem;
-  }
-  @include respond(phone) {
-    width: 90%;
+    object-fit: cover;
   }
 }
 .circle {
@@ -118,4 +158,22 @@
   outline: none;
   background-color: #ffffff;
   color: #0b0d17;
+}
+.hovering--bg {
+  outline: 0.1rem solid #ffffff;
+}
+
+.none--tech {
+  @include respond(tab-land) {
+    display: none;
+  }
+}
+
+.display--tech {
+  display: none;
+  @include respond(tab-land) {
+    display: flex;
+    gap: 3rem;
+    color: #ffffff;
+  }
 }
