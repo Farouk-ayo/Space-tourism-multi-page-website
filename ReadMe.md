@@ -30,12 +30,10 @@ Users should be able to:
 
 ![desktopMode](images/Screenshot%202022-09-06%20at%2021-36-53%20Frontend%20Mentor%20Space%20tourism%20website.png)
 
-![mobileMode](images/Screenshot%202022-09-06%20at%2021-38-29%20Frontend%20Mentor%20Space%20tourism%20website.png)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/css-propertiesflexbox-sass-html-and-javascript-R-ez_KcsCH)
-- Live Site URL: [Add live site URL here](space-tourism-frk.netlify.app)
+- Solution URL: [FrontendMentor-Space-tourism](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/css-propertiesflexbox-sass-html-and-javascript-R-ez_KcsCH)
+- Live Site URL: [Space-tourism](space-tourism-frk.netlify.app)
 
 ## My process
 
@@ -50,7 +48,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
--
 - Desktop-first workflow
 - [Sass](https://www.npmjs.com/package/node-sass) - For styles
 
@@ -76,17 +73,6 @@ Users should be able to:
           </picture>
 ```
 
-```adding of same css classes to multiple HTML tags and creation of custom random classes and id to improve a particular effects on nav links and others
-.active--nav {
-  border-bottom: 0.3rem solid #ffffff;
-  bottom: 0rem;
-}
-.hover--nav {
-  border-bottom: 0.3rem solid #ffffff78;
-  bottom: 0rem;
-}
-```
-
 ```js
 const SomethingTrickyIdiscovered = window.location.href;
 const str = SomethingTrickyIdiscovered.split("/");
@@ -99,6 +85,6 @@ On my JavaScript skills
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/eff-r-k)
-- Twitter - [@yourusername](https://www.twitter.com/eff_r_k)
+- Website - [Farouk](https://www.your-site.com)
+- Frontend Mentor - [@Faroukayo](https://www.frontendmentor.io/profile/eff-r-k)
+- Twitter - [@Faroukayo](https://www.twitter.com/eff_r_k)
