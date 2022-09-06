@@ -19,6 +19,7 @@ html {
 body {
   box-sizing: border-box;
   color: #ffffff;
+  background-color: #000;
 }
 
 .header {
