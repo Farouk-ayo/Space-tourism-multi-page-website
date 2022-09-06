@@ -1,8 +1,8 @@
 {
-  "name": "frontendmentor challenge---sapce tourism website",
+  "name": "final-code",
   "version": "1.0.0",
   "description": "html/css/javascript website ",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css",
     "devserver": "live-server",
