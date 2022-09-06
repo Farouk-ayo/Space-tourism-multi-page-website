@@ -8,7 +8,7 @@
 }
 html {
   font-size: 62.5%;
-  @include respond([phone]) {
+  @include respond(phone) {
     font-size: 50%;
   }
 }
@@ -19,7 +19,7 @@ body {
 
 .header {
   background: url("../images/home/background-home-desktop.jpg");
-  padding: 0rem 0rem 0rem 3rem;
+  padding: 3rem 0rem 0rem 3rem;
   background-size: cover;
   background-position: right;
 
@@ -28,6 +28,12 @@ body {
     background-size: cover;
     background-position: center;
   }
+  @include respond(phone) {
+    background: url("../images/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0rem 0rem 3rem;
+  }
 }
 
 .nav {
@@ -35,6 +41,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @include respond(phone) {
+    display: inline-block;
+  }
 
   hr {
     width: 40%;
@@ -45,25 +54,32 @@ body {
     left: 5rem;
     right: 0rem;
     margin-right: -10rem;
-    // @include respond(tab) {
-    //   display: none;
-    // }
+
     @include respond(win-land) {
-      width: 35%;
-    }
-    @include respond(win-port) {
       width: 30%;
     }
-    @include respond(tab-land) {
+    @include respond(win-port) {
       width: 20%;
     }
-    @include respond(tab) {
+
+    @include respond(tab-land) {
       display: none;
     }
   }
 }
-
-
+.toggle--items--check {
+  display: none;
+  @include respond(phone) {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5rem;
+    top: 10rem;
+    padding: 4.5rem 0rem 4.5rem 5rem;
+    z-index: 10;
+  }
+}
 .toggle--items {
   list-style: none;
   display: flex;
@@ -78,43 +94,42 @@ body {
     padding: 4.5rem 5rem 4.5rem 10rem;
   }
   @include respond(tab) {
+    gap: 3rem;
+  }
+  @include respond(tab) {
     background-color: #ffffff10;
     backdrop-filter: none;
     padding: 4.5rem 5rem 4.5rem 5rem;
   }
-  @include respond(phone) {
-    background-color: none;
-    flex-direction: column;
-    gap: 3rem;
-    position: absolute;
-  }
-  li {
-    a {
-      font-size: 1.7rem;
-      display: flex;
-      gap: 1rem;
-      letter-spacing: 0.27rem;
-      line-height: 1;
-      text-decoration: none;
-      font-family: "Barlow Condensed", sans-serif;
-      text-transform: uppercase;
-      font-weight: 16;
-      color: #ffffff;
+}
+.toggle--items__each {
+  a {
+    font-size: 1.7rem;
+    display: flex;
+    gap: 1rem;
+    letter-spacing: 0.27rem;
+    line-height: 1;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 16;
+    color: #ffffff;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
 
-      .number {
-        font-weight: bold;
-        @include respond(tab) {
-          display: none;
-        }
+    .number {
+      font-weight: bold;
+      @include respond(tab) {
+        display: none;
+      }
+      @include respond(phone) {
+        display: inline-block;
       }
     }
   }
 }
-.none {
-  @include respond(phone) {
-    display: none;
-  }
-}
+
 .main--body {
   position: relative;
   // top: 10rem;
@@ -124,18 +139,18 @@ body {
   align-items: flex-end;
   margin: 25rem 10rem 0rem 13rem;
   padding-bottom: 13rem;
+  @include respond(win-port) {
+    margin: 10rem 5rem 0 5rem;
+  }
+  @include respond(tab-land) {
+    margin: 10rem 0rem 0 5rem;
+  }
   @include respond(tab) {
     flex-direction: column;
     margin: 10rem 10rem 0rem 13rem;
     align-items: center;
     justify-content: space-between;
     gap: 15rem;
-  }
-  @include respond(tab-land) {
-    margin: 10rem 0rem 0 5rem;
-  }
-  @include respond(win-port) {
-    margin: 10rem 5rem 0 5rem;
   }
 }
 .left--section {
@@ -144,12 +159,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @include respond(win-port) {
+    width: 70%;
+  }
   @include respond(tab) {
     width: 61%;
     align-items: center;
   }
-  @include respond(win-port) {
-    width: 70%;
+
+  @include respond(phone) {
+    width: 100%;
   }
 }
 .text {
@@ -159,6 +178,10 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 28;
   color: #d0d6f9;
+
+  @include respond(phone-mini) {
+    font-size: 2rem;
+  }
 }
 .text--highlight {
   font-size: 15rem;
@@ -169,6 +192,9 @@ body {
   @include respond(tab) {
     font-size: 17rem;
     text-align: center;
+  }
+  @include respond(phone) {
+    font-size: 15rem;
   }
 }
 .text--content {

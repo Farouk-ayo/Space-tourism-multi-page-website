@@ -24,23 +24,50 @@
         <div class="logo">
           <img src="../logo/logo.svg" alt="" />
         </div>
-        <hr />
-        <ul class="toggle--items">
+        <hr class="hr--nav" />
+        <ul class="toggle--items none">
           <li class="toggle--items__each">
             <a href="../Index.html"><span class="number">00</span> Home</a>
           </li>
           <li class="toggle--items__each">
-            <a href="#"
-              ><span class="number">01</span> destination</a
+            <a href="#"><span class="number">01</span> destination</a>
+          </li>
+          <li class="toggle--items__each">
+            <a href="../sites/crew-commander.html"
+              ><span class="number">02</span> crew</a
             >
           </li>
           <li class="toggle--items__each">
-            <a href="../sites/crew-commander.html"><span class="number">02</span> crew</a>
-          </li>
-          <li class="toggle--items__each">
-            <a href="../sites/technology-vehicle.html" class="number">03</span> technology</a>
+            <a href="../sites/technology-vehicle.html"
+              ><span class="number"> 03</span> technology</a
+            >
           </li>
         </ul>
+        <input type="checkbox" class="navbar" id="navbar--toggle" />
+        <label for="navbar--toggle" class="navbar__button">
+          <span class="navbar__icon">&nbsp;</span>
+        </label>
+
+        <div class="navbar--tog">
+          <ul class="toggle--items--check">
+            <li class="toggle--items__each">
+              <a href="../Index.html"><span class="number">00</span> Home</a>
+            </li>
+            <li class="toggle--items__each">
+              <a href="#"><span class="number">01</span> destination</a>
+            </li>
+            <li class="toggle--items__each">
+              <a href="crew-commander.html"
+                ><span class="number">02</span> crew</a
+              >
+            </li>
+            <li class="toggle--items__each">
+              <a href="technology-vehicle.html"
+                ><span class="number">03</span> technology</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <main class="main--body main--body__destination">
@@ -48,7 +75,7 @@
           <h5 class="text">
             <span class="number planet">01</span> Pick your destination
           </h5>
-          <img src="../images/destination/image-moon.png" alt="" />
+          <img class="img" src="../images/destination/image-moon.png" alt="" />
         </section>
         <section class="right--section right--section__destination">
           <ul class="toggle--items right--toggle__destination">
@@ -72,7 +99,7 @@
             you’re there, take in some history by visiting the Luna 2 and Apollo
             11 landing sites.
           </p>
-          <hr />
+          <hr class="hr--info" />
           <div class="info">
             <div class="info-div">
               <h5>Avg. distance</h5>

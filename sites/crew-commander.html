@@ -25,7 +25,7 @@
           <img src="../logo/logo.svg" alt="" />
         </div>
         <hr />
-        <ul class="toggle--items">
+        <ul class="toggle--items none">
           <li class="toggle--items__each">
             <a href="../Index.html"><span class="number">00</span> Home</a>
           </li>
@@ -45,10 +45,37 @@
             </a>
           </li>
         </ul>
+        <input type="checkbox" class="navbar" id="navbar--toggle" />
+        <label for="navbar--toggle" class="navbar__button">
+          <span class="navbar__icon">&nbsp;</span>
+        </label>
+
+        <div class="navbar--tog">
+          <ul class="toggle--items--check">
+            <li class="toggle--items__each">
+              <a href="#"><span class="number">00</span> Home</a>
+            </li>
+            <li class="toggle--items__each">
+              <a href="sites/destination-moon.html"
+                ><span class="number">01</span> destination</a
+              >
+            </li>
+            <li class="toggle--items__each">
+              <a href="sites/crew-commander.html"
+                ><span class="number">02</span> crew</a
+              >
+            </li>
+            <li class="toggle--items__each">
+              <a href="sites/technology-vehicle.html"
+                ><span class="number">03</span> technology</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
       <main class="main--body main--body__destination main--body__crew">
         <section class="left--section left--section__crew">
-          <h5 class="text">
+          <h5 class="text none">
             <span class="number planet">02</span> Meet your crew
           </h5>
           <div class="texts">
@@ -60,13 +87,19 @@
               third time as commander of Crew Dragon Demo-2.
             </p>
           </div>
-          <div class="dots">
+          <div class="dots none">
             <a class="dot" href="#"><span class="dot"></a>
             <a class="dot" href="crew-specialist.html"></a>
             <a class="dot" href="crew-pilot.html" ></a>
             <a class="dot" href="crew-engineer.html" ></a>
           </div>
         </section>
+        <div class="dots display">
+          <a class="dot" href="#"><span class="dot"></a>
+          <a class="dot" href="crew-specialist.html"></a>
+          <a class="dot" href="crew-pilot.html" ></a>
+          <a class="dot" href="crew-engineer.html" ></a>
+        </div>
         <section class="right--section right--section__crew">
           <img
             class="crew--img"
@@ -74,6 +107,9 @@
             alt=""
           />
         </section>
+       <h5 class="text display">
+          <span class="number planet">02</span> Meet your crew
+        </h5>
       </main>
     </header>
   </body>

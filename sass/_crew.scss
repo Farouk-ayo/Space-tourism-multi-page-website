@@ -1,12 +1,45 @@
 .header--crew {
   background: url(../images/crew/background-crew-desktop.jpg);
-  padding: 0rem 0rem 0rem 3rem;
+  padding: 3rem 0rem 0rem 2rem;
   background-size: cover;
   background-position: right;
+  @include respond(tab) {
+    background-color: url(../images/crew/background-crew-tablet.jpg);
+    padding: 3rem 0rem 0rem 2rem;
+    background-size: cover;
+    background-position: center;
+  }
+  @include respond(phone) {
+    background-color: url(../images/crew/background-crew-mobile.jpg);
+    padding: 3rem 0rem 0rem 2rem;
+    background-size: cover;
+    background-position: center;
+  }
 }
 .main--body__crew {
   margin: 10rem 10rem 0 13rem;
+  display: flex;
+  flex-direction: row;
   padding-bottom: 0rem;
+  @include respond(win-large) {
+    margin: 10rem 10rem 0 5rem;
+  }
+  @include respond(win-land) {
+    margin: 10rem 4rem 0 4rem;
+  }
+  @include respond(tab-land) {
+    margin: 10rem 4rem 0 2rem;
+  }
+  @include respond(tab) {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    flex-direction: column-reverse;
+    margin: 15rem 0rem 0rem 0rem;
+    gap: 15rem;
+  }
 }
 
 .text--highlight__small {
@@ -21,15 +54,41 @@
   flex-direction: column;
   gap: 15rem;
   margin-bottom: 5rem;
+  @include respond(win-large) {
+    width: 50%;
+  }
+  @include respond(win-land) {
+    width: 70%;
+  }
+  @include respond(tab-land) {
+    width: 45%;
+  }
+  @include respond(tab) {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 15rem;
+  }
   .text {
     color: #ffffff;
+    @include respond(tab) {
+      align-self: flex-start;
+    }
+    @include respond(phone) {
+      align-self: center;
+    }
   }
 
   .texts {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
+    @include respond(tab) {
+      align-items: center;
+    }
     .text--content__crew {
       width: 90%;
     }
@@ -39,6 +98,9 @@
   }
   .text--highlight {
     font-size: 5.5rem;
+    @include respond(phone) {
+      font-size: 5rem;
+    }
   }
 }
 .right--section__crew {
@@ -48,6 +110,9 @@
 .crew--img {
   position: relative;
   top: 0rem;
+  @include respond(phone) {
+    width: 90%;
+  }
 }
 
 .dots {
@@ -61,6 +126,19 @@
   height: 2rem;
   border-radius: 50%;
   background-color: #979797;
+}
+.none {
+  @include respond(phone) {
+    display: none;
+  }
+}
+.display {
+  display: none;
+  @include respond(phone) {
+    display: flex;
+    gap: 3rem;
+    color: #ffffff;
+  }
 }
 
 .active {

@@ -3,31 +3,70 @@
   padding: 0rem 0rem 0rem 3rem;
   background-size: cover;
   background-position: right;
+  @include respond(tab-land) {
+    background-color: url(../images/technology/background-technology-tablet.jpg);
+    padding: 0rem 0rem 0rem 0rem;
+    background-size: cover;
+    background-position: center;
+  }
+  @include respond(phone) {
+    background-color: url(../images/technology/background-technology-mobile.jpg);
+    padding: 0rem 0rem 0rem 2rem;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .main--body__tech {
   margin: 10rem 0rem 0rem 13rem;
   display: flex;
   align-items: flex-start;
+  @include respond(win-large) {
+    margin: 10rem 0rem 0 5rem;
+  }
+  @include respond(win-land) {
+    margin: 10rem 0rem 0 3rem;
+  }
+  @include respond(tab-land) {
+    margin: 10rem 0rem 0 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .left--section__tech {
   width: 50%;
+  @include respond(win-large) {
+    width: 60%;
+  }
 }
 
 .right--section__tech {
   width: 50%;
+  @include respond(win-large) {
+    width: 35%;
+  }
+  @include respond(win-land) {
+    width: 40%;
+  }
+  @include respond(tab-land) {
+    width: 100%;
+  }
 }
 .tech--text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
+  gap: 5rem;
 }
 .tech {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 67%;
+  @include respond(win-land) {
+    width: 90%;
+  }
 }
 
 .text--content__tech {
@@ -37,12 +76,27 @@
 
 .text--highlight__tech {
   font-size: 5.6rem;
+  @include respond(win-land) {
+    font-size: 4.5rem;
+  }
 }
 
 .numbers {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+.tech--img {
+  position: relative;
+  top: 0rem;
+  @include respond(tab-land) {
+    width: 100%;
+    object-fit: fill;
+    height: 50rem;
+  }
+  @include respond(phone) {
+    width: 90%;
+  }
 }
 .circle {
   width: 7rem;
